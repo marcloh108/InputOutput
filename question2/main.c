@@ -1,16 +1,10 @@
 #include <stdio.h>
-#define PI 3.14
 
 int main() {
-    char firstname[20], lastname[20];
-    int birthdate;
-    printf("Input your firstname: ");
-    scanf("%s", firstname);
-    printf("Input your lastname: ");
-    scanf("%s", lastname);
-    printf("Input your year of birth: ");
-    scanf("%d", &birthdate);
-
-    printf("%s %s %d\n", firstname, lastname, birthdate);
+    int a, b, c, sum;
+    printf("Input three numbers separated by comma :");
+    scanf("%d, %d, %d", &a, &b, &c);
+    sum = a + b + c;
+    printf("The sum of three numbers : %d", sum);
     return(0);
 }
