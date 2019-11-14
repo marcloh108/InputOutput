@@ -2,16 +2,15 @@
 #define PI 3.14
 
 int main() {
+    char firstname[20], lastname[20];
+    int birthdate;
+    printf("Input your firstname: ");
+    scanf("%s", firstname);
+    printf("Input your lastname: ");
+    scanf("%s", lastname);
+    printf("Input your year of birth: ");
+    scanf("%d", &birthdate);
 
-    float radius;
-    float volume;
-    printf("Input the radius of the sphere : ");
-    scanf("%f", &radius);
-
-
-
-    volume = (4.0 / 3.0) * PI * (radius * radius * radius);
-    printf("The volume of sphere is %f.\n", volume);
-
+    printf("%s %s %d\n", firstname, lastname, birthdate);
     return(0);
 }
